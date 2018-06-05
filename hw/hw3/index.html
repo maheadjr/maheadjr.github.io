@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>puzzle game</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+<script>
+//$(document).ready(function(){}
+// game that ramdomly chooses a letter or number
+// player has to match the randomly genrated letter or number
+// if the player guesses the letter or number they get a point
+
+
+alert("Lets play Guess the letter");
+
+alert("You and the computer will choose form these letters!!! A,B,C,D");
+
+//turn into a function called computerChoice
+function computerchoice(){
+var letters = ["a","b","c","d"];
+ var computerrandomletter =letters[Math.floor(Math.random()*letters.length)];
+document.write("computerchoice: ", computerrandomletter, "-------");
+}
+computerchoice();
+//////////////////////////////////
+
+alert("the computer has choosen");
+
+/////////////////
+
+//turn into a function  called  playeChoice/ how can the player choose their own letter???
+  function playerchoice(){
+  var letters = ["a","b","c","d"];
+ var playerrandomletter =letters[Math.floor(Math.random()*letters.length)];
+document.write("playerchoice:", playerrandomletter, "-----------");
+}
+playerchoice();
+////////////////////////////
+//how do i make a loop to continuously call the function for a new game????
+//////////////
+var playerpoint = 0;
+var computerpoint = 0;
+
+//////////////////////////////
+
+//turn into a function called score
+
+if (playerchoice == computerchoice)
+{
+document.write("player : ", playerpoint +=1);
+}
+else if  (computerchoice != playerchoice )
+{
+  document.write("computer :  ", computerpoint+=1);
+
+}
+
+
+
+//loop function to contnue to get points
+
+
+</script>
+</head>
+
+<body>
+
+
+</body>
+</html>
